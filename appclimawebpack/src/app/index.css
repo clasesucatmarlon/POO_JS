@@ -1,0 +1,15 @@
+body {
+  background: rgb(44, 44, 61);
+}
+
+h5 {
+  font-size: .8rem;
+}
+#image {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black; 
+  border-radius: 50%;
+  background: pink;
+  box-shadow: 1px 1px 10px black;
+}

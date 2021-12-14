@@ -4,52 +4,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App Clima - POO - Webpack - </title>
-  <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+  <title>App Weather</title>
 </head>
 <body>
-  <div class="container p-4">
+  <div class="container">
+    <h1>Weather</h1>
     <div class="row">
-      <div class="col-md-4 mx-auto text-center">
-        <h1>App Clima</h1>
-
-        <div class="card mb-2">
-          <div class="card-body">
-            <h1 id="weather-location" class="h3">LOCATION</h1>
-            <h3 id="weather-description" class="h4">DESCRIPTION</h3>
-            <div class="list-group d-flex flex-row justify-content-between align-content-center p-1">
-              <h5 class="mb-0 font-weight-bold">Temp: <span id="temperature" class="ml-4"></span></h5>
-              <h5 class="mb-0 font-weight-bold">Max: <span id="temperature-max" class="ml-4"></span></h5>
-              <h5 class="mb-0 font-weight-bold">Min: <span id="temperature-min" class="ml-4"></span></h5>
-            </div>
-            
-            
-            
-            <ul class="list-group mt-2 d-flex align-items-center">
-              <li class="list-group-item">HUMIDITY: <span id="weather-humidity" class="ml-4"></span></li>
-              <img id="image" src="" alt="">
-              <li class="list-group-item">WIND: <span id="weather-wind" class="ml-4"></span></li>
-            </ul>
-          </div>
-        </div>
+      <div class="col">
 
         <div class="card">
           <div class="card-body">
+            <p id="weather-location" class="h3">LOCATION</p>
+            <img id="image" src="" alt="">
+            <p id="weather-description" class="h4">DESCRIPTION</p>
+            <div class="element-group">
+              <p class="label">Temp: <span id="temperature"></span></p>
+              <p class="label">Max: <span id="temperature-max"></span></p>
+              <p class="label">Min: <span id="temperature-min"></span></p>
+            </div>
+            <div class="element-group">
+              <p class="label">Humidity: <span id="weather-humidity"></span></p>
+              <p class="label">Wind: <span id="weather-wind"></span></p>
+
+            </div>
+          </div>
+        </div>
+          
+        <div class="card">
+          <div class="card-body">
+
             <form id="weather-form">
-              <div class="form-group mb-1">
+              <div class="form-group">
+                <label>City:</label>
                 <input type="text" class="form-control" id="city" placeholder="City" autofocus>
               </div>
-              <div class="form-group mb-1">
+              <div class="form-group">
+                <label>Country Code:</label>
                 <input type="text" class="form-control" id="countryCode" placeholder="Country Code" autofocus>
               </div>
-              <div class="form-group mt-2">
-                <button id="weather-change-btn" class="btn btn-primary w-100 ">Save Changes</button>
+              <div class="form-group">
+                <button id="weather-change-btn">Save Changes</button>
               </div>
             </form>
+
+            <div class="footer">
+              <p>All right reserved. Copyright 2021 - Marlon Garcia. </p>
+            </div>
+
           </div>
         </div>
 
       </div>
+
+
+
     </div>
   </div>
   

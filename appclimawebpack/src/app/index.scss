@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url("./background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  .row {
+    width: 20%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px black;
+    @media screen and (max-width: 2080px) {
+      width: 25%;
+    }
+    @media screen and (max-width: 1324px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 420px) {
+      width: 80%;
+    }
+    .aaa {
+      color: red;
+    }
+    .col {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        .card-body {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 1rem 0 2rem 0;
+            color: darkblue;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 4px rgb(116, 111, 111);
+            @media screen and (min-width: 650px) {
+              font-size: 1.8rem;
+            }
+            @media screen and (min-width: 420px) {
+              font-size: 1.7rem;
+            }
+            @media screen and (min-width: 320px) {
+              font-size: 1.6rem;
+            }
+          }
+          #image {
+            margin: 0.5rem;
+            border-radius: 50%;
+            background: rgb(115, 115, 161);
+            box-shadow: 1px 1px 10px black;
+          }
+          .h4 {
+            margin: 0 0 1rem 0;
+            padding: 0;
+            font-weight: 700;
+          }
+          .element-group {
+            width: 100%;
+            margin-top: 1rem;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            box-shadow: 1px 1px 8px black;
+            border-radius: 5px;
+            @media screen and (max-width: 420px) {
+              display: flex;
+              flex-direction: column;
+            }
+            .label {
+              margin: 0;
+              padding: 0.8rem 0;
+              font-size: 1rem;
+              font-weight: 700;
+              color: green;
+              span {
+                color: black;
+                font-size: 0.9rem;
+              }
+            }
+          }
+          form {
+            padding: 0 1rem;
+            width: 100%;
+            .form-group {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              width: 100%;
+              label {
+                margin-top: 0.8rem;
+                font-size: 0.9rem;
+                font-weight: 700;
+              }
+              input {
+                background: white;
+                height: 30px;
+                padding: 0.3rem;
+                font-size: 0.8rem;
+                border: none;
+                box-shadow: 0px 0px 3px black;
+              }
+              button {
+                border: 1px solid cornflowerblue;
+                background: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                height: 20px;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover {
+                  background: cornflowerblue;
+                  color: white;
+                }
+              }
+            }
+          }
+          .footer {
+            padding-top: 1rem;
+            color: black;
+            font-size: .8rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

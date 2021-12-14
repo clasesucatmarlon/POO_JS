@@ -8,6 +8,7 @@ const weather = new Weather(city, countryCode);
 const view = new View();
 
 require('./index.css');
+require('./index.css');
 
 
 async function getWeather() {

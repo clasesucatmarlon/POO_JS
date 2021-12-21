@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App articles</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+
+  <body>
+    <nav class="header">
+      <!-- <p class="title" href="#">Products App</p> -->
+      <div class="box">
+        <div class="inner">
+          <span>ProductApp</span>
+        </div>
+        <div class="inner">
+          <span>ProductApp</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- APPLICATION -->
+      <div id="App" class="row pt-5">
+        <!-- FORM -->
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Add a product</h4>
+            </div>
+
+            <form id="product-form" class="card-body">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Product Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="price"
+                  step="0.01"
+                  placeholder="Product Price"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="year"
+                  min="1900"
+                  max="2099"
+                  step="1"
+                  value="2021"
+                  class="form-control"
+                />
+              </div>
+              <input type="submit" value="Save" class="btn" />
+            </form>
+          </div>
+        </div>
+
+        <!-- PRODUCTS LIST -->
+        <div id="product-list" class="col-8">
+          <table>
+            <thead class="head">
+              <tr>
+                <th class="product__name">Name</th>
+                <th class="product__price">Price</th>
+                <th class="product__year">Year</th>
+                <th class="product__action">Action</th>
+              </tr>
+            </thead>
+            <tbody id='body'>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

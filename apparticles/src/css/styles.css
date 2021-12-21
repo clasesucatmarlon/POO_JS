@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 4px black;
+}
+.header .title {
+  padding: 1rem 0 1rem 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row .col-4 {
+  padding: 1rem;
+  box-shadow: 1px 1px 4px black;
+  width: 32%;
+}
+.row .col-4 .card .card-header {
+  width: 100%;
+  background: #f0ecec;
+}
+.row .col-4 .card .card-header h4 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.row .col-4 .card .card-body {
+  padding: 1rem 0;
+}
+.row .col-4 .card .card-body .form-group input {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #c4c2c2;
+}
+.row .col-4 .card .card-body .btn {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background: white;
+  border: 1px solid #2A5B8D;
+  border-radius: 15px;
+  color: #2A5B8D;
+}
+.row .col-4 .card .card-body .btn:hover {
+  background: #2A5B8D;
+  color: white;
+}
+.row .col-8 {
+  padding: 1rem;
+  width: 66%;
+  box-shadow: 1px 1px 4px black;
+}
+.row .col-8 table {
+  width: 100%;
+}
+.row .col-8 table thead {
+  font-weight: 700;
+  background-color: #f0ecec;
+}
+.row .col-8 table thead .product__name {
+  width: 65%;
+  border-bottom: 2px solid black;
+  padding: 0.5rem 0;
+  text-align: left;
+}
+.row .col-8 table thead .product__price {
+  width: 15%;
+  border-bottom: 2px solid black;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.row .col-8 table thead .product__year {
+  border-bottom: 2px solid black;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.row .col-8 table thead .product__action {
+  width: 5%;
+  border-bottom: 2px solid black;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.row .col-8 table tbody tr {
+  background-color: #f0ecec;
+}
+.row .col-8 table tbody tr .product__name {
+  padding: 0.4rem 0rem;
+  width: 65%;
+  text-align: left;
+}
+.row .col-8 table tbody tr .product__price {
+  padding: 0.5rem 0rem;
+  width: 15%;
+  text-align: center;
+}
+.row .col-8 table tbody tr .product__year {
+  padding: 0.6rem 0rem;
+  width: 15%;
+  text-align: center;
+}
+.row .col-8 table tbody tr .product__action {
+  padding: 0.6rem 0rem;
+  width: 5%;
+  text-align: center;
+}
+.row .col-8 table tbody tr .product__action .btn__deleted {
+  border: none;
+  cursor: pointer;
+}
+.row .col-8 table tbody tr .product__action .btn__deleted .far {
+  font-size: 1.1rem;
+}
+
+.alert-sucess {
+  background-color: #4f794f;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.alert-delete {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.alert-warning {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Logo animado  */
+.box {
+  display: flex;
+}
+
+.box .inner {
+  width: 150px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.box .inner:first-child {
+  background-color: #6c95be;
+  color: #2A5B8D;
+  transform-origin: right;
+  transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+  background-color: lightcoral;
+  background-color: #2A5B8D;
+  color: antiquewhite;
+  transform-origin: left;
+  transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+  position: absolute;
+  animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+  animation-delay: 2.5s;
+  left: -100%;
+}
+
+@keyframes marquee {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
